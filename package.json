@@ -1,6 +1,6 @@
 {
-  "name": "ng-connection-monitor",
-  "version": "4.0.0",
+  "name": "@abilbaotm/ng-connection-monitor-9",
+  "version": "4.0.1",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -16,7 +16,14 @@
     "snyk-protect": "snyk protect",
     "prepare": "npm run snyk-protect"
   },
-  "private": true,
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/abilbaotm/ng-connection-service-9.git"
+  },
   "dependencies": {
     "@angular/animations": "~9.0.1",
     "@angular/common": "~9.0.1",
@@ -26,12 +33,12 @@
     "@angular/platform-browser": "~9.0.1",
     "@angular/platform-browser-dynamic": "~9.0.1",
     "@angular/router": "~9.0.1",
-    "rxjs": "~6.5.4",
-    "tslib": "^1.10.0",
-    "zone.js": "~0.10.2",
-    "core-js": "^3.6.4",
+    "core-js": "^3.6.5",
     "lodash": "^4.17.15",
-    "snyk": "^1.293.0"
+    "rxjs": "^6.5.5",
+    "snyk": "^1.293.0",
+    "tslib": "^1.11.1",
+    "zone.js": "~0.10.2"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.900.2",
@@ -39,8 +46,9 @@
     "@angular/cli": "~9.0.2",
     "@angular/compiler-cli": "~9.0.1",
     "@angular/language-service": "~9.0.1",
-    "@types/jasmine": "~3.5.4",
+    "@types/jasmine": "^3.5.10",
     "@types/jasminewd2": "~2.0.8",
+    "@types/node": "^13.11.1",
     "codelyzer": "^5.2.1",
     "jasmine-core": "~3.5.0",
     "jasmine-spec-reporter": "~4.2.1",
@@ -49,12 +57,11 @@
     "karma-coverage-istanbul-reporter": "~2.1.1",
     "karma-jasmine": "~3.1.1",
     "karma-jasmine-html-reporter": "^1.5.2",
+    "ng-packagr": "^9.0.0",
     "protractor": "~5.4.3",
     "ts-node": "~8.6.1",
     "tslint": "~5.20.1",
-    "typescript": "~3.7.5",
-    "@types/node": "^13.7.1",
-    "ng-packagr": "^9.0.0"
+    "typescript": "~3.7.5"
   },
   "snyk": true
 }
